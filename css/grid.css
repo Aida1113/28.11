@@ -28,10 +28,39 @@
 .align-center{
     align-items: center;
 }
-
-
+.img-fluid{
+    width: 100%;
+}
+.text-center{
+    text-align: center;
+}
 a{
     text-decoration: none;
+}
+.btn{
+    border: none;
+    padding: 12px 20px;
+    border-radius: 4px;
+    background: transparent;
+    outline: none;
+    font-size: 1.2em;
+    transition: background .3s ease-in-out;
+    font-family: 'Oswald', sans-serif;
+    margin: 15px 0;
+}
+.btn-danger{
+    background: red;
+    color: white;
+}
+.btn-danger:hover{
+    background: black;
+}
+.btn-yellow{
+    background: goldenrod;
+    color: white;
+}
+.btn-yellow:hover{
+    background: black;
 }
 /* @media(max-width:576px){
   

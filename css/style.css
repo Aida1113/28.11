@@ -1,3 +1,6 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+}
 #header{
     background: black;
     color: white;
@@ -28,68 +31,61 @@
     background: url(../foto/aida.png);
     height: 100vh;
     background-size: cover;
+    background-attachment: fixed;
     background-position: center;
     position: relative;
 
 }
-#super-burger .smoke{
-    background: url(../foto/smoke.png);
-    height: 500px;
-    width: 500px;
-    background-repeat: no-repeat;
+#ingredients{
+    padding-top: 4em;
+}
+#ingredients .ing-right{
+color: #797979;
+}
+#ingredients h1{
+    padding: 20px 0;
+    color: black;
+    font-size: 2.9em ;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    position: relative;
+}
+#ingredients p{
+    margin-bottom: 25px;
+    line-height: 1.85;
+}
+#ingredients li{
+    padding: 8px 0;
+    letter-spacing: .5;
+}
+.bg-effect {
+    position: relative;
+    padding-left: 50px;
+    padding-top: 4px;
+    font-size: 1.4em;
+    font-weight: 900;
+    color: white;
+}
+.bg-effect::before{
+    content: '';
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    animation: anismoke 4s infinite;
+    background-image: url(../foto/title.png);
+    width: 100%;
+    background-repeat: no-repeat;
+    height: 100%;
+    padding: 25px 0;
+    left: 0%;
+    top: -50%;
+    z-index: -5;
 }
-@keyframes anismoke{
-    from{
-    transform: translate(-50%,0%);
-    opacity: 1;
-    }
-    to{
-        transform: translate(-50%,-50%);
-        opacity: 0;
-    }
+/* ************************************ */
+#menyu .menu-top{
+    text-align: center;
 }
-#super-burger .smoke:nth-child(1){
-animation-delay: 0s;
-animation-duration: 2s;
-}
-#super-burger .smoke:nth-child(2){
-    animation-delay: .3s;
-}
-#super-burger .smoke:nth-child(3){
-    animation-delay: .6s;
-}
-#super-burger .smoke:nth-child(4){
-    animation-delay: .9s;
-}
-#super-burger .smoke:nth-child(5){
-    animation-delay: 1.2s;
-}
-#super-burger .smoke:nth-child(6){
-    animation-delay: .5s;
-}
-#super-burger .smoke:nth-child(7){
-    animation-delay: .8s;
+#menyu .bg-effect{
    
-    }
-    #super-burger .smoke:nth-child(8){
-        animation-delay: .1s;
-    }
-    #super-burger .smoke:nth-child(9){
-        animation-delay: .4s;
-    }
-    #super-burger .smoke:nth-child(10){
-        animation-delay: .7s;
-    }
-    #super-burger .smoke:nth-child(11){
-        animation-delay: .2s;
-    }
-    #super-burger .smoke:nth-child(12){
-        animation-delay: 1.5s;
-    }
-
-
+    padding: 15px;
+}
+#menyu .bg-effect::before{
+    background-position: center;
+}
